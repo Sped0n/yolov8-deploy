@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "yolov8-deploy"
+dynamic = ["version"]
+description = "A small tool used to remove the post-processing part of the yolov8 model"
+authors = [
+  { name = "Sped0n<github.com/Sped0n>", email = "realsped0n@outlook.com" },
+]
+requires-python = ">=3.11.0"
+dependencies = [
+  "numpy==1.26.1",
+  "onnx==1.14.0",
+  "onnxruntime==1.15.1",
+  "onnxsim==0.4.33",
+  "opencv-python==4.8.1.78",
+]
